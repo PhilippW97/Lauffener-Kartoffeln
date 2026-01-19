@@ -1,3 +1,4 @@
+import { MessageCircle, Heart, SquareArrowOutUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useEffect } from 'react';
 
@@ -22,15 +23,11 @@ function InstagramPost() {
         
         <div className="flex items-center gap-6 font-proza text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-logo-color fill-current" viewBox="0 0 24 24">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-            </svg>
+            <Heart className="w-5 h-5 text-white" />
             <span feed-field="like-count" />
           </div>
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-white fill-current" viewBox="0 0 24 24">
-              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-            </svg>
+            <MessageCircle className="w-5 h-5 text-white" />
             <span feed-field="comment-count" />
           </div>
         </div>
@@ -41,9 +38,7 @@ function InstagramPost() {
           rel="noopener noreferrer"
           className="absolute top-4 right-4 bg-white/20 backdrop-blur-md rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-500 hover:bg-white/30"
         >
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
+          <SquareArrowOutUpRight className="w-5 h-5 text-white" />
         </a>
       </div>
     </div>
