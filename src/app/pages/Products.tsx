@@ -46,14 +46,14 @@ export function Products() {
       {/* Hero Section */}
       <section className="bg-dusty-olive w-full px-5 md:px-16 2xl:px-24 py-24 md:py-32 2xl:py-40">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="font-['Proza_Libre:SemiBold',sans-serif] text-white text-base mb-6">
+          <p className="font-proza font-semibold text-white text-base mb-6">
             Unsere Produkte
           </p>
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-white text-5xl md:text-6xl 2xl:text-7xl leading-tight tracking-tight mb-8" 
+            className="font-nunito font-bold text-white text-5xl md:text-6xl 2xl:text-7xl leading-tight tracking-tight mb-8" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Frisch vom Feld
@@ -62,7 +62,7 @@ export function Products() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-['Proza_Libre:Regular',sans-serif] text-white text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
+            className="font-proza text-white text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
           >
             Entdecken Sie unsere Auswahl an hochwertigen Kartoffelsorten. Jede Sorte wird sorgfältig ausgewählt und unter optimalen Bedingungen angebaut.
           </motion.p>
@@ -90,10 +90,10 @@ export function Products() {
                   />
                 </div>
                 <div className="px-6 pb-6 flex flex-col gap-3">
-                  <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-2xl text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                  <h3 className="font-nunito font-bold text-2xl text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                     {product.name}
                   </h3>
-                  <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base leading-relaxed">
+                  <p className="font-proza text-dark-charcoal text-base leading-relaxed">
                     {product.description}
                   </p>
                 </div>
@@ -114,46 +114,46 @@ export function Products() {
               transition={{ duration: 0.6 }}
               className="flex flex-col gap-6"
             >
-              <h2 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl leading-tight tracking-tight text-white" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+              <h2 className="font-nunito font-bold text-4xl md:text-5xl leading-tight tracking-tight text-white" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                 Qualität, die man schmeckt
               </h2>
-              <p className="font-['Proza_Libre:Regular',sans-serif] text-white text-base md:text-lg leading-relaxed">
+              <p className="font-proza text-white text-base md:text-lg leading-relaxed">
                 Alle unsere Kartoffeln werden unter strengen Qualitätskontrollen angebaut. Wir verwenden nur natürliche Düngemittel und setzen auf nachhaltige Anbaumethoden, die sowohl der Umwelt als auch der Qualität unserer Produkte zugutekommen.
               </p>
-              <p className="font-['Proza_Libre:Regular',sans-serif] text-white text-base md:text-lg leading-relaxed">
+              <p className="font-proza text-white text-base md:text-lg leading-relaxed">
                 Von der Aussaat bis zur Ernte begleiten wir jede Kartoffel mit größter Sorgfalt. So können wir garantieren, dass nur die besten Kartoffeln auf Ihren Teller kommen.
               </p>
             </motion.div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <p className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <p className="font-nunito font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   100%
                 </p>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-white text-base">
+                <p className="font-proza text-white text-base">
                   Regional angebaut
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <p className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <p className="font-nunito font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   4+
                 </p>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-white text-base">
+                <p className="font-proza text-white text-base">
                   Generationen Erfahrung
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <p className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <p className="font-nunito font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   6
                 </p>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-white text-base">
+                <p className="font-proza text-white text-base">
                   Verschiedene Sorten
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <p className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <p className="font-nunito font-bold text-4xl text-white mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   365
                 </p>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-white text-base">
+                <p className="font-proza text-white text-base">
                   Tage Verfügbarkeit
                 </p>
               </div>
@@ -170,12 +170,12 @@ export function Products() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl leading-tight tracking-tight text-[#0c0c0b] mb-6" 
+            className="font-nunito font-bold text-4xl md:text-5xl leading-tight tracking-tight text-dark-charcoal mb-6" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Bereit zum Bestellen?
           </motion.h2>
-          <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base md:text-lg leading-relaxed mb-8">
+          <p className="font-proza text-dark-charcoal text-base md:text-lg leading-relaxed mb-8">
             Besuchen Sie unseren Online-Shop oder kontaktieren Sie uns direkt für Großbestellungen und individuelle Wünsche.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -183,12 +183,12 @@ export function Products() {
               href="https://shop.lauffener-kartoffeln.de"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-dusty-olive px-6 py-2.5 rounded-md text-white font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_rgba(12,12,11,0.15),inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity"
+              className="bg-dusty-olive px-6 py-2.5 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity"
             >
               Zum Shop
             </a>
             <Link to="/kontakt">
-              <button className="bg-[rgba(12,12,11,0.05)] px-6 py-2.5 rounded-md text-[#0c0c0b] font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_0px_0px_1px_rgba(12,12,11,0.05),inset_0px_-2px_1px_0px_rgba(12,12,11,0.05)] hover:bg-[rgba(12,12,11,0.1)] transition-colors">
+              <button className="bg-dark-charcoal-05 px-6 py-2.5 rounded-md text-dark-charcoal font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_0px_0px_1px_var(--color-dark-charcoal-05),inset_0px_-2px_1px_0px_var(--color-dark-charcoal-05)] hover:bg-dark-charcoal/10 transition-colors">
                 Kontakt aufnehmen
               </button>
             </Link>

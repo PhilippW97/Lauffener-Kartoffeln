@@ -66,7 +66,7 @@ function HeroSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-white text-4xl md:text-5xl 2xl:text-7xl leading-tight tracking-tight mb-4 md:mb-0" 
+                className="font-nunito font-bold text-white text-4xl md:text-5xl 2xl:text-7xl leading-tight tracking-tight mb-4 md:mb-0" 
                 style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
               >
                 Kartoffeln aus Leidenschaft und Tradition
@@ -78,11 +78,11 @@ function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
               className="flex flex-col justify-end gap-6 2xl:gap-8"
             >
-              <p className="font-['Proza_Libre:Regular',sans-serif] text-white text-lg md:text-xl 2xl:text-2xl leading-relaxed">
+              <p className="font-proza text-white text-lg md:text-xl 2xl:text-2xl leading-relaxed">
                 Seit Generationen bauen wir die besten Kartoffeln an. Direkt vom Feld zu dir nach Hause, frisch und voller Geschmack.
               </p>
               <Link to="/ueber-uns">
-                <button className="bg-dusty-olive px-6 py-2.5 rounded-md text-floral-white font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_0px_0px_1px_rgba(12,12,11,0.05),inset_0px_-2px_1px_0px_rgba(12,12,11,0.05)] w-fit hover:opacity-90 transition-opacity">
+                <button className="bg-dusty-olive px-6 py-2.5 rounded-md text-floral-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_0px_0px_1px_var(--color-dark-charcoal-05),inset_0px_-2px_1px_0px_var(--color-dark-charcoal-05)] w-fit hover:opacity-90 transition-opacity">
                   Mehr erfahren
                 </button>
               </Link>
@@ -100,7 +100,7 @@ function AboutSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 2xl:gap-20">
           <div className="flex flex-col gap-4">
-            <p className="font-['Proza_Libre:SemiBold',sans-serif] text-[#0c0c0b] text-base">
+            <p className="font-proza font-semibold text-dark-charcoal text-base">
               Unsere Geschichte
             </p>
             <motion.h2 
@@ -108,7 +108,7 @@ function AboutSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl 2xl:text-7xl leading-tight tracking-tight" 
+              className="font-nunito font-bold text-4xl md:text-5xl 2xl:text-7xl leading-tight tracking-tight" 
               style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
             >
               <span className="text-black">Familie</span>
@@ -123,17 +123,17 @@ function AboutSection() {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-end gap-6 2xl:gap-8"
           >
-            <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base md:text-lg leading-relaxed">
+            <p className="font-proza text-dark-charcoal text-base md:text-lg leading-relaxed">
               Unser Hof steht für ehrliche Arbeit und natürliche Qualität. Wir kennen jeden Acker, jede Pflanze und jeden Stein auf unserem Land. Das ist nicht nur unser Beruf, es ist unser Leben.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/ueber-uns">
-                <button className="bg-logo-color px-6 py-2.5 rounded-md text-white font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_rgba(12,12,11,0.15),inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity">
+                <button className="bg-logo-color px-6 py-2.5 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity">
                   Entdecken
                 </button>
               </Link>
               <Link to="/kontakt">
-                <button className="bg-[rgba(12,12,11,0.05)] px-6 py-2.5 rounded-md text-[#0c0c0b] font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_0px_0px_1px_rgba(12,12,11,0.05),inset_0px_-2px_1px_0px_rgba(12,12,11,0.05)] hover:bg-[rgba(12,12,11,0.1)] transition-colors">
+                <button className="bg-dark-charcoal-05 px-6 py-2.5 rounded-md text-dark-charcoal font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_0px_0px_1px_var(--color-dark-charcoal-05),inset_0px_-2px_1px_0px_var(--color-dark-charcoal-05)] hover:bg-dark-charcoal/10 transition-colors">
                   Kontaktieren
                 </button>
               </Link>
@@ -155,12 +155,12 @@ function ProductsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight mb-6" 
+            className="font-nunito font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight mb-6" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Frisch vom Feld
           </motion.h2>
-          <p className="font-['Proza_Libre:Regular',sans-serif] text-lg leading-relaxed">
+          <p className="font-proza text-lg leading-relaxed">
             Wähle aus unserer Auswahl an hochwertigen Kartoffelsorten
           </p>
         </div>
@@ -235,12 +235,12 @@ function InstagramSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight mb-6" 
+            className="font-nunito font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight mb-6" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Instagram
           </motion.h2>
-          <p className="font-['Proza_Libre:Regular',sans-serif] text-lg leading-relaxed">
+          <p className="font-proza text-lg leading-relaxed">
             Einblicke in die tägliche Arbeit auf dem Acker, im Weinberg oder auf dem Hof
           </p>
         </div>
@@ -267,10 +267,10 @@ function ShopSection() {
             className="flex flex-col gap-6 2xl:gap-8"
           >
             <div className="flex flex-col gap-6">
-              <h2 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+              <h2 className="font-nunito font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                 Besuche unseren <span className="text-dusty-olive">Online-Shop</span>
               </h2>
-              <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base md:text-lg leading-relaxed">
+              <p className="font-proza text-dark-charcoal text-base md:text-lg leading-relaxed">
                 Bestelle jetzt deine frischen Kartoffeln direkt vom Hof und lass sie dir nach Hause liefern
               </p>
             </div>
@@ -278,7 +278,7 @@ function ShopSection() {
               href="https://shop.lauffener-kartoffeln.de"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-dusty-olive px-6 py-2.5 rounded-md text-white font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_rgba(12,12,11,0.15),inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] w-fit hover:opacity-90 transition-opacity"
+              className="bg-dusty-olive px-6 py-2.5 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] w-fit hover:opacity-90 transition-opacity"
             >
               Zum Shop
             </a>
@@ -295,7 +295,7 @@ function ContactSection() {
     <section id="contact" className="bg-eggshell w-full px-5 md:px-16 2xl:px-24 py-16 md:py-24 2xl:py-28">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 2xl:mb-20">
-          <p className="font-['Proza_Libre:SemiBold',sans-serif] text-[#0c0c0b] text-base mb-4">
+          <p className="font-proza font-semibold text-dark-charcoal text-base mb-4">
             Kontakt
           </p>
           <motion.h2 
@@ -303,12 +303,12 @@ function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight text-[#0c0c0b] mb-6" 
+            className="font-nunito font-bold text-4xl md:text-5xl 2xl:text-[52px] leading-tight tracking-tight text-dark-charcoal mb-6" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Erreiche uns
           </motion.h2>
-          <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base md:text-lg leading-relaxed">
+          <p className="font-proza text-dark-charcoal text-base md:text-lg leading-relaxed">
             Wir freuen uns auf deine Nachricht und deine Fragen
           </p>
         </div>
@@ -317,13 +317,13 @@ function ContactSection() {
             <div className="flex flex-col gap-4">
               <MailIcon />
               <div className="flex flex-col gap-2">
-                <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-[22px] tracking-tight text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <h3 className="font-nunito font-bold text-[22px] tracking-tight text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   E-Mail
                 </h3>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base">
+                <p className="font-proza text-dark-charcoal text-base">
                   Schreib uns jederzeit
                 </p>
-                <a href="mailto:LINK@lauffener-kartoffeln.de" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base underline hover:opacity-70 transition-opacity">
+                <a href="mailto:LINK@lauffener-kartoffeln.de" className="font-proza text-dark-charcoal text-base underline hover:opacity-70 transition-opacity">
                   LINK@lauffener-kartoffeln.de
                 </a>
               </div>
@@ -331,27 +331,38 @@ function ContactSection() {
             <div className="flex flex-col gap-4">
               <PhoneIcon />
               <div className="flex flex-col gap-2">
-                <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-[22px] tracking-tight text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <h3 className="font-nunito font-bold text-[22px] tracking-tight text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   Telefon
                 </h3>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base">
+                <p className="font-proza text-dark-charcoal text-base">
                   Ruf uns an während der Öffnungszeiten
                 </p>
-                <a href="tel:+4917284697260" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base underline hover:opacity-70 transition-opacity">
-                  0172 / 8469726
-                </a>
+                <div className="flex flex-col gap-1">
+                  <p className="font-proza font-semibold text-dark-charcoal text-base">Hansjörg:</p>
+                  <a href="tel:+491728469726" className="font-proza text-dark-charcoal text-base underline hover:opacity-70 transition-opacity">
+                    0172 / 8469726
+                  </a>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="font-proza font-semibold text-dark-charcoal text-base">Kilian:</p>
+                  <a href="tel:+491739032286" className="font-proza text-dark-charcoal text-base underline hover:opacity-70 transition-opacity">
+                    0173 / 9032286
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex flex-col gap-4">
               <LocationIcon />
               <div className="flex flex-col gap-2">
-                <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-[22px] tracking-tight text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <h3 className="font-nunito font-bold text-[22px] tracking-tight text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   Adresse
                 </h3>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base">
-                  LINK Kartoffel GbR, Nordheimer Str. 99/1, 74348 Lauffen am Neckar
+                <p className="font-proza text-dark-charcoal text-base">
+                  LINK Kartoffel GbR, Nordheimer Str. 99, 74348 Lauffen am Neckar
                 </p>
-                <button className="flex items-center gap-2 text-[#0c0c0b] font-['Proza_Libre:Medium',sans-serif] text-base hover:opacity-70 transition-opacity mt-2">
+                <button className="flex items-center gap-2 text-dark-charcoal font-proza font-medium text-base hover:opacity-70 transition-opacity mt-2 w-fit"
+                  onClick={() => window.open('https://maps.app.goo.gl/Yc5JVxDhat8mqBMW9')}
+                >
                   Route anzeigen
                   <ChevronRight />
                 </button>

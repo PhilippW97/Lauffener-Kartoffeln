@@ -10,7 +10,7 @@ export function Privacy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-white text-5xl md:text-6xl 2xl:text-7xl leading-tight tracking-tight mb-8" 
+            className="font-nunito font-bold text-white text-5xl md:text-6xl 2xl:text-7xl leading-tight tracking-tight mb-8" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Datenschutz
@@ -19,7 +19,7 @@ export function Privacy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-['Proza_Libre:Regular',sans-serif] text-white text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
+            className="font-proza text-white text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
           >
             Informationen zur Verarbeitung deiner personenbezogenen Daten
           </motion.p>
@@ -29,10 +29,10 @@ export function Privacy() {
       {/* Content Section */}
       <section className="bg-eggshell w-full px-5 md:px-16 2xl:px-24 py-16 md:py-24 2xl:py-28">
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col gap-8 font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base leading-relaxed">
+          <div className="flex flex-col gap-8 font-proza text-dark-charcoal text-base leading-relaxed">
             
             <div>
-              <h2 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-3xl tracking-tight text-[#0c0c0b] mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+              <h2 className="font-nunito font-bold text-3xl tracking-tight text-dark-charcoal mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                 1. Datenschutz auf einen Blick
               </h2>
               <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-xl tracking-tight text-[#0c0c0b] mb-3 mt-6" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
@@ -44,7 +44,7 @@ export function Privacy() {
             </div>
 
             <div>
-              <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-xl tracking-tight text-[#0c0c0b] mb-3" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+              <h3 className="font-nunito font-bold text-xl tracking-tight text-dark-charcoal mb-3" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                 Datenerfassung auf dieser Website
               </h3>
               <p className="mb-4">
@@ -103,11 +103,11 @@ export function Privacy() {
               </p>
               <p className="mb-4">
                 LINK Kartoffel GbR<br />
-                Nordheimer Str. 99/1<br />
+                Nordheimer Str. 99<br />
                 74348 Lauffen am Neckar
               </p>
               <p className="mb-4">
-                Telefon: 0172 / 8469726, 0173 / 9032286<br />
+                Telefon: Hansjörg: 0172 / 8469726, Kilian: 0173 / 9032286<br />
                 E-Mail: LINK@lauffener-kartoffeln.de
               </p>
               <p className="mb-4">
@@ -133,8 +133,8 @@ export function Privacy() {
               </p>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-[rgba(12,12,11,0.15)]">
-              <p className="text-sm text-[#0c0c0b]/70">
+            <div className="mt-12 pt-8 border-t border-dark-charcoal/15">
+              <p className="text-sm text-dark-charcoal/70">
                 Stand: Januar 2026
               </p>
             </div>

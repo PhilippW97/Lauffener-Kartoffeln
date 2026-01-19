@@ -10,17 +10,17 @@ TIP: More context isn't always better. It can confuse the LLM. Try and add the m
 
 # General guidelines
 
-Any general rules you want the AI to follow.
-For example:
-
-* Only use absolute positioning when necessary. Opt for responsive and well structured layouts that use flexbox and grid by default
 * Refactor code as you go to keep code clean
 * Keep file sizes small and put helper functions and components in their own files.
 
---------------
-
 # Design system guidelines
-Rules for how the AI should make generations look like your company's design system
+
+* **Never use hardcoded hex colors or font-families in component styles.**
+* Always use CSS variables defined in `src/styles/theme.css`.
+* Use Tailwind theme names for variables:
+    * Fonts: `font-proza`, `font-nunito`
+    * Colors: `text-logo-color`, `bg-dusty-olive`, `text-dark-charcoal`, etc.
+* For shadows with opacity, use the predefined variables like `var(--color-dark-charcoal-05)` or Tailwind's opacity shorthand: `dark-charcoal/15`.
 
 Additionally, if you select a design system to use in the prompt box, you can reference
 your design system's components, tokens, variables and components.

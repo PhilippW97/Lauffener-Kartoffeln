@@ -44,6 +44,10 @@
   --floral-white: #FCF8F2;
   --dusty-olive: #727450;
   --coffee-bean: #6A4630;
+  --font-proza: "Proza Libre", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
+  --dark-charcoal: #0c0c0b;
+  --dark-charcoal-05: rgba(12, 12, 11, 0.05);
 }
 
 .dark {
@@ -127,6 +131,10 @@
   --color-floral-white: var(--floral-white);
   --color-dusty-olive: var(--dusty-olive);
   --color-coffee-bean: var(--coffee-bean);
+  --font-proza: var(--font-proza);
+  --font-nunito: var(--font-nunito);
+  --color-dark-charcoal: var(--dark-charcoal);
+  --color-dark-charcoal-05: var(--dark-charcoal-05);
 }
 
 @layer base {

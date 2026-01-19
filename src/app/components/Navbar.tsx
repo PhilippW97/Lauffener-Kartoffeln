@@ -35,13 +35,13 @@ export function Navbar() {
               <Link to="/" className="w-14 h-14 shrink-0">
                 <img alt="Logo" className="w-full h-full object-cover" src={imgLogo} />
               </Link>
-              <Link to="/ueber-uns" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base hover:opacity-70 transition-opacity">
+              <Link to="/ueber-uns" className="font-proza text-dark-charcoal text-base hover:opacity-70 transition-opacity">
                 Über uns
               </Link>
-              <Link to="/produkte" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base hover:opacity-70 transition-opacity">
+              <Link to="/produkte" className="font-proza text-dark-charcoal text-base hover:opacity-70 transition-opacity">
                 Produkte
               </Link>
-              <Link to="/kontakt" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base hover:opacity-70 transition-opacity">
+              <Link to="/kontakt" className="font-proza text-dark-charcoal text-base hover:opacity-70 transition-opacity">
                 Kontakt
               </Link>
             </div>
@@ -49,7 +49,7 @@ export function Navbar() {
               href="https://shop.lauffener-kartoffeln.de"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-dusty-olive px-5 py-2 rounded-md text-white font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_rgba(12,12,11,0.15),inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity"
+              className="bg-dusty-olive px-5 py-2 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity"
             >
               Shop
             </a>
@@ -65,7 +65,7 @@ export function Navbar() {
           </Link>
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="w-12 h-12 flex items-center justify-center text-[#0c0c0b] hover:opacity-70 transition-opacity"
+            className="w-12 h-12 flex items-center justify-center text-dark-charcoal hover:opacity-70 transition-opacity"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -83,13 +83,13 @@ export function Navbar() {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="fixed inset-0 bg-eggshell z-40 md:hidden"
           >
-            <div className="h-16 px-5 md:px-8 flex items-center justify-between border-b border-[rgba(12,12,11,0.1)]">
+            <div className="h-16 px-5 md:px-8 flex items-center justify-between border-b border-dark-charcoal/10">
               <Link to="/" className="w-14 h-14" onClick={closeMenu}>
                 <img alt="Logo" className="w-full h-full object-cover" src={imgLogo} />
               </Link>
               <button 
                 onClick={closeMenu}
-                className="w-12 h-12 flex items-center justify-center text-[#0c0c0b]"
+                className="w-12 h-12 flex items-center justify-center text-dark-charcoal"
                 aria-label="Close menu"
               >
                 <CloseIcon />
@@ -100,21 +100,21 @@ export function Navbar() {
               <Link 
                 to="/ueber-uns" 
                 onClick={closeMenu}
-                className="w-full text-center py-3 font-['Proza_Libre:Bold',sans-serif] text-[#0c0c0b] text-lg hover:bg-[rgba(12,12,11,0.05)] rounded-md transition-colors"
+                className="w-full text-center py-3 font-proza font-bold text-dark-charcoal text-lg hover:bg-dark-charcoal/5 rounded-md transition-colors"
               >
                 Über uns
               </Link>
               <Link 
                 to="/produkte" 
                 onClick={closeMenu}
-                className="w-full text-center py-3 font-['Proza_Libre:Bold',sans-serif] text-[#0c0c0b] text-lg hover:bg-[rgba(12,12,11,0.05)] rounded-md transition-colors"
+                className="w-full text-center py-3 font-proza font-bold text-dark-charcoal text-lg hover:bg-dark-charcoal/5 rounded-md transition-colors"
               >
                 Produkte
               </Link>
               <Link 
                 to="/kontakt" 
                 onClick={closeMenu}
-                className="w-full text-center py-3 font-['Proza_Libre:Bold',sans-serif] text-[#0c0c0b] text-lg hover:bg-[rgba(12,12,11,0.05)] rounded-md transition-colors"
+                className="w-full text-center py-3 font-proza font-bold text-dark-charcoal text-lg hover:bg-dark-charcoal/5 rounded-md transition-colors"
               >
                 Kontakt
               </Link>
@@ -122,7 +122,7 @@ export function Navbar() {
                 href="https://shop.lauffener-kartoffeln.de"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center bg-dusty-olive px-5 py-2 rounded-md text-white font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_rgba(12,12,11,0.15),inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] mt-4"
+                className="w-full text-center bg-dusty-olive px-5 py-2 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] mt-4"
               >
                 Shop
               </a>

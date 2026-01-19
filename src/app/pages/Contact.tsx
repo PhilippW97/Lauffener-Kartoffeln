@@ -46,14 +46,14 @@ export function Contact() {
       {/* Hero Section */}
       <section className="bg-dusty-olive w-full px-5 md:px-16 2xl:px-24 py-24 md:py-32 2xl:py-40">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="font-['Proza_Libre:SemiBold',sans-serif] text-white text-base mb-6">
+          <p className="font-proza font-semibold text-white text-base mb-6">
             Kontakt
           </p>
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-white text-5xl md:text-6xl 2xl:text-7xl leading-tight tracking-tight mb-8" 
+            className="font-nunito font-bold text-white text-5xl md:text-6xl 2xl:text-7xl leading-tight tracking-tight mb-8" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Erreiche uns
@@ -62,7 +62,7 @@ export function Contact() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-['Proza_Libre:Regular',sans-serif] text-white text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
+            className="font-proza text-white text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
           >
             Wir freuen uns auf deine Nachricht und deine Fragen. Kontaktiere uns per E-Mail, Telefon oder besuche uns direkt auf dem Hof.
           </motion.p>
@@ -83,13 +83,13 @@ export function Contact() {
               >
                 <MailIcon />
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-[22px] tracking-tight text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                  <h3 className="font-nunito font-bold text-[22px] tracking-tight text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                     E-Mail
                   </h3>
-                  <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base">
+                  <p className="font-proza text-dark-charcoal text-base">
                     Schreib uns jederzeit
                   </p>
-                  <a href="mailto:LINK@lauffener-kartoffeln.de" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base underline hover:opacity-70 transition-opacity">
+                  <a href="mailto:LINK@lauffener-kartoffeln.de" className="font-proza text-dark-charcoal text-base underline hover:opacity-70 transition-opacity">
                     LINK@lauffener-kartoffeln.de
                   </a>
                 </div>
@@ -103,18 +103,24 @@ export function Contact() {
               >
                 <PhoneIcon />
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-[22px] tracking-tight text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                  <h3 className="font-nunito font-bold text-[22px] tracking-tight text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                     Telefon
                   </h3>
-                  <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base">
+                  <p className="font-proza text-dark-charcoal text-base">
                     Ruf uns an während der Öffnungszeiten
                   </p>
-                  <a href="tel:+4917284697260" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base underline hover:opacity-70 transition-opacity">
-                    0172 / 8469726
-                  </a>
-                  <a href="tel:+4917390322860" className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base underline hover:opacity-70 transition-opacity">
-                    0173 / 9032286
-                  </a>
+                  <div className="flex flex-col gap-1">
+                    <p className="font-proza font-semibold text-dark-charcoal text-base">Hansjörg:</p>
+                    <a href="tel:+491728469726" className="font-proza text-dark-charcoal text-base underline hover:opacity-70 transition-opacity">
+                      0172 / 8469726
+                    </a>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <p className="font-proza font-semibold text-dark-charcoal text-base">Kilian:</p>
+                    <a href="tel:+491739032286" className="font-proza text-dark-charcoal text-base underline hover:opacity-70 transition-opacity">
+                      0173 / 9032286
+                    </a>
+                  </div>
                 </div>
               </motion.div>
               <motion.div 
@@ -126,13 +132,15 @@ export function Contact() {
               >
                 <LocationIcon />
                 <div className="flex flex-col gap-2">
-                  <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-[22px] tracking-tight text-[#0c0c0b]" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                  <h3 className="font-nunito font-bold text-[22px] tracking-tight text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                     Adresse
                   </h3>
-                  <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base">
-                    LINK Kartoffel GbR, Nordheimer Str. 99/1, 74348 Lauffen am Neckar
+                  <p className="font-proza text-dark-charcoal text-base">
+                    LINK Kartoffel GbR, Nordheimer Str. 99, 74348 Lauffen am Neckar
                   </p>
-                  <button className="flex items-center gap-2 text-[#0c0c0b] font-['Proza_Libre:Medium',sans-serif] text-base hover:opacity-70 transition-opacity mt-2 w-fit">
+                  <button className="flex items-center gap-2 text-dark-charcoal font-proza font-medium text-base hover:opacity-70 transition-opacity mt-2 w-fit"
+                    onClick={() => window.open('https://maps.app.goo.gl/Yc5JVxDhat8mqBMW9')}
+                  >
                     Route anzeigen
                     <ChevronRight />
                   </button>
@@ -154,7 +162,7 @@ export function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl leading-tight tracking-tight text-white text-center mb-12" 
+            className="font-nunito font-bold text-4xl md:text-5xl leading-tight tracking-tight text-white text-center mb-12" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Öffnungszeiten
@@ -168,10 +176,10 @@ export function Contact() {
                 transition={{ duration: 0.5 }}
                 className="bg-white/10 backdrop-blur-sm p-6 rounded-lg"
               >
-                <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-xl text-white mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <h3 className="font-nunito font-bold text-xl text-white mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   Hofladen
                 </h3>
-                <div className="flex flex-col gap-2 font-['Proza_Libre:Regular',sans-serif] text-white text-base">
+                <div className="flex flex-col gap-2 font-proza text-white text-base">
                   <div className="flex justify-between">
                     <span>Montag - Freitag:</span>
                     <span>8:00 - 18:00</span>
@@ -193,10 +201,10 @@ export function Contact() {
                 transition={{ duration: 0.5 }}
                 className="bg-white/10 backdrop-blur-sm p-6 rounded-lg"
               >
-                <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-xl text-white mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                <h3 className="font-nunito font-bold text-xl text-white mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
                   Telefon
                 </h3>
-                <div className="flex flex-col gap-2 font-['Proza_Libre:Regular',sans-serif] text-white text-base">
+                <div className="flex flex-col gap-2 font-proza text-white text-base">
                   <div className="flex justify-between">
                     <span>Montag - Freitag:</span>
                     <span>7:00 - 19:00</span>
@@ -224,44 +232,56 @@ export function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-4xl md:text-5xl leading-tight tracking-tight text-[#0c0c0b] text-center mb-4" 
+            className="font-nunito font-bold text-4xl md:text-5xl leading-tight tracking-tight text-dark-charcoal text-center mb-4" 
             style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}
           >
             Folge uns auf Instagram
           </motion.h2>
-          <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base md:text-lg leading-relaxed text-center mb-12">
-            Entdecke unseren Alltag auf dem Hof, frische Rezepte und exklusive Einblicke hinter die Kulissen.
+          <p className="font-proza text-dark-charcoal text-base md:text-lg leading-relaxed text-center mb-12">
+            Entdecke unseren Alltag auf dem Hof und exklusive Einblicke hinter die Kulissen.
           </p>
           
           {/* Instagram Embed Placeholder */}
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md p-8 text-center border border-[rgba(12,12,11,0.1)]">
+            <div className="bg-white rounded-lg shadow-md p-8 text-center border border-dark-charcoal/10">
               <div className="flex flex-col items-center gap-6">
                 <svg className="w-16 h-16 text-dusty-olive" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
-                <div>
-                  <h3 className="font-['Nunito_Sans:Bold',sans-serif] font-bold text-2xl text-[#0c0c0b] mb-2" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
-                    @kartoffelhof_musterstadt
-                  </h3>
-                  <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b] text-base mb-6">
-                    Hier kannst du dein Instagram-Widget einbinden
-                  </p>
-                  <a 
-                    href="https://www.instagram.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-dusty-olive px-6 py-3 rounded-md text-white font-['Proza_Libre:Medium',sans-serif] text-base shadow-[0px_1px_2px_0px_rgba(12,12,11,0.05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_rgba(12,12,11,0.15),inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity"
-                  >
-                    Auf Instagram folgen
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
+                <div className="flex flex-col md:flex-row gap-8 w-full justify-center mt-4">
+                  <div className="flex flex-col items-center">
+                    <h3 className="font-nunito font-bold text-xl text-dark-charcoal mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                      Hauptkanal des Betriebs
+                    </h3>
+                    <a 
+                      href="https://www.instagram.com/link_lauffener_kartoffeln/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-logo-color px-6 py-3 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05)] hover:opacity-90 transition-opacity"
+                    >
+                      @link_lauffener_kartoffeln
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <h3 className="font-nunito font-bold text-xl text-dark-charcoal mb-4" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
+                      Kanal von Kilian
+                    </h3>
+                    <a 
+                      href="https://www.instagram.com/kilian_link95/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-dusty-olive px-6 py-3 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity"
+                    >
+                      @kilian_link95
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-                <p className="font-['Proza_Libre:Regular',sans-serif] text-[#0c0c0b]/60 text-sm mt-4">
-                  Um ein Instagram-Widget einzubinden, kannst du Services wie EmbedSocial, Elfsight oder die offizielle Instagram Embed API verwenden.
-                </p>
               </div>
             </div>
           </div>
