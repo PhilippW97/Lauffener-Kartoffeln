@@ -1,3 +1,12 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+/* Optional: Add a CSS-only skeleton loader while the script is loading */
+div[feedspring^="inst_UeITM4rImQzX55AJRVmQK"]:empty::before {
+  content: "Loading Instagram Feed...";
+  display: block;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}

@@ -8,8 +8,23 @@ import { Contact } from '@/app/pages/Contact';
 import { Privacy } from '@/app/pages/Privacy';
 import { Terms } from '@/app/pages/Terms';
 import { Cookies } from '@/app/pages/Cookies';
+import { useEffect } from 'react';
 
 export default function App() {
+  // Inside your component:
+useEffect(() => {
+  const script = document.createElement('script');
+  script.src = "https://scripts.feedspring.com/instagram-attrs.js";
+  script.async = true;
+  script.defer = true;
+  document.body.appendChild(script);
+
+  return () => {
+    // Cleanup to prevent multiple scripts on re-renders
+    document.body.removeChild(script);
+  };
+}, []);
+
   return (
     <Router>
       <div className="min-h-screen w-full flex flex-col bg-eggshell">
