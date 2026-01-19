@@ -53,7 +53,7 @@ function LocationIcon() {
 
 function HeroSection() {
   return (
-    <section className="relative w-full h-[525px] md:h-[735px] 2xl:h-[95vh]">
+    <section className="relative w-full h-[525px] lg:h-[95vh] 2xl:h-[95vh]">
       <div className="absolute inset-0">
         <img alt="Potato field with family" className="w-full h-full object-cover" src={imgHeader111} />
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.4)]" />

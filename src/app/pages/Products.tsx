@@ -70,9 +70,9 @@ export function Products() {
       </section>
 
       {/* Products Grid */}
-      <section className="bg-eggshell w-full px-5 md:px-16 2xl:px-24 py-16 md:py-24 2xl:py-28">
+      <section className="bg-eggshell w-full px-5 md:px-16 lg:px-24 py-16 md:py-24 lg:py-28">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8 2xl:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {products.map((product, index) => (
               <motion.div
                 key={index}

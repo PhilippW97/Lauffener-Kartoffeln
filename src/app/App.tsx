@@ -8,7 +8,6 @@ import { Contact } from '@/app/pages/Contact';
 import { Privacy } from '@/app/pages/Privacy';
 import { Terms } from '@/app/pages/Terms';
 import { Cookies } from '@/app/pages/Cookies';
-import { useEffect } from 'react';
 
 export default function App() {
 

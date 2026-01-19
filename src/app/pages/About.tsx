@@ -8,9 +8,9 @@ export function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-dusty-olive w-full px-5 md:px-16 2xl:px-24 py-24 md:py-32 2xl:py-40">
+      <section className="bg-dusty-olive w-full px-5 md:px-16 lg:px-24 py-24 md:py-32 lg:py-40">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 2xl:grid-cols-2 gap-12 2xl:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex flex-col gap-6">
               <p className="font-proza font-semibold text-white text-base">
                 Unsere Geschichte
@@ -41,9 +41,9 @@ export function About() {
       </section>
 
       {/* Story Section */}
-      <section className="bg-eggshell w-full px-5 md:px-16 2xl:px-24 py-16 md:py-24 2xl:py-28">
+      <section className="bg-eggshell w-full px-5 md:px-16 lg:px-24 py-16 md:py-24 lg:py-28">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 2xl:grid-cols-2 gap-12 2xl:gap-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
