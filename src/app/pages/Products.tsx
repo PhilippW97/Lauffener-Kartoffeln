@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import imgPlaceholderImage2 from "@/assets/55215e51a79c223dc6ed4c1a1a6b72a5e6d8e54e.png";
-import imgPlaceholderImage1 from "@/assets/bf64f5deee2eb021e74584a36b2466a48cdfc63b.png";
-import imgPlaceholderImage6 from "@/assets/1c3196cd034da7c9677bfe640abe64ef7dbf6690.png";
-import imgPlaceholderImage3 from "@/assets/7971e5238dc3cc814471ec24e5dc47b665ca0564.png";
-import imgPlaceholderImage4 from "@/assets/aa1609e142fb2fa036f4678f4654b587e80d98a6.png";
-import imgPlaceholderImage5 from "@/assets/f3b45765bc9c48234308cba38e09b63540d713c8.png";
+import imgPlaceholderImage2 from "@/assets/IMG_8818.webp";
+import imgPlaceholderImage1 from "@/assets/IMG_8814.webp";
+import imgPlaceholderImage6 from "@/assets/IMG_8820.webp";
+import imgPlaceholderImage3 from "@/assets/IMG_8848.webp";
+import imgPlaceholderImage4 from "@/assets/IMG_8841.webp";
+import imgPlaceholderImage5 from "@/assets/IMG_8839.webp";
 
 export function Products() {
   const products = [

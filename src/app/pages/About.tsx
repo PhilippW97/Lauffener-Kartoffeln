@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import imgPlaceholderImage8 from "@/assets/31199fb2b3321a4aacc4d0bdf86d632c0a45fb97.png";
-import imgPlaceholderImage2 from "@/assets/55215e51a79c223dc6ed4c1a1a6b72a5e6d8e54e.png";
-import imgPlaceholderImage7 from "@/assets/7502bd1c8388a80c90d7cf27db00f74ac2de094a.png";
+import imgPlaceholderImage8 from "@/assets/IMG_8858.webp";
+import imgPlaceholderImage2 from "@/assets/IMG_8818.webp";
+import imgPlaceholderImage7 from "@/assets/IMG_8823.webp";
 
 export function About() {
   return (

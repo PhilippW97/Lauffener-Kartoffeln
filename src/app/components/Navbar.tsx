@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import imgLogo from "@/assets/ba263f1bda7e49e6dfdae47a1648ef8ceaabbac3.png";
+import imgLogo from "@/assets/logo_no_bg.png";
 
 function HamburgerIcon() {
   return (
