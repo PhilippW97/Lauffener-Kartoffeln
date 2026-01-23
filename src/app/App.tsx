@@ -8,6 +8,7 @@ import { Contact } from '@/app/pages/Contact';
 import { Privacy } from '@/app/pages/Privacy';
 import { Terms } from '@/app/pages/Terms';
 import { Cookies } from '@/app/pages/Cookies';
+import { Checkout } from '@/app/pages/Checkout';
 
 export default function App() {
 
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/datenschutz" element={<Privacy />} />
             <Route path="/agb" element={<Terms />} />
             <Route path="/cookies" element={<Cookies />} />
+            <Route path="/kasse" element={<Checkout />} />
           </Routes>
         </main>
         <Footer />

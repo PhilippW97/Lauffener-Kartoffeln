@@ -231,7 +231,7 @@ function ShopSection() {
   return (
     <section className="bg-eggshell w-full px-5 md:px-16 2xl:px-24 py-16 md:py-24 2xl:py-28">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 2xl:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:gap-20 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -247,14 +247,12 @@ function ShopSection() {
                 Bestelle jetzt deine frischen Kartoffeln direkt vom Hof und lass sie dir nach Hause liefern
               </p>
             </div>
-            <a 
-              href="https://shop.lauffener-kartoffeln.de"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/produkte"
               className="bg-dusty-olive px-6 py-2.5 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] w-fit hover:opacity-90 transition-opacity"
             >
               Zum Shop
-            </a>
+            </Link>
           </motion.div>
           <img src={imgPlaceholderImage} alt="Online shop preview" className="w-full rounded-lg object-cover aspect-[3/2]" />
         </div>
@@ -285,7 +283,7 @@ function ContactSection() {
             Wir freuen uns auf deine Nachricht und deine Fragen
           </p>
         </div>
-        <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 2xl:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:gap-20">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-4">
               <MailIcon />

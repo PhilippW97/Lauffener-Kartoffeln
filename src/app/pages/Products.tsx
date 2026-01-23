@@ -1,45 +1,21 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { motion } from 'motion/react';
-import imgPlaceholderImage2 from "@/assets/IMG_8818.webp";
-import imgPlaceholderImage1 from "@/assets/IMG_8814.webp";
-import imgPlaceholderImage6 from "@/assets/IMG_8820.webp";
-import imgPlaceholderImage3 from "@/assets/IMG_8848.webp";
-import imgPlaceholderImage4 from "@/assets/IMG_8841.webp";
-import imgPlaceholderImage5 from "@/assets/IMG_8839.webp";
+import { Link } from 'react-router-dom';
+import { Button } from '@/app/components/ui/button';
+import { useCart } from '@/context/CartContext';
+import { products, ProductData } from '@/data/products';
+import { ProductCard } from '@/app/components/products/ProductCard';
+import { ProductDialog } from '@/app/components/products/ProductDialog';
 
 export function Products() {
-  const products = [
-    {
-      name: "Festkochende Kartoffeln",
-      description: "Perfekt für Salate und als Beilage. Behalten ihre Form beim Kochen.",
-      image: imgPlaceholderImage2,
-    },
-    {
-      name: "Mehligkochende Kartoffeln",
-      description: "Ideal für Püree, Suppen und Eintöpfe. Cremig und aromatisch.",
-      image: imgPlaceholderImage1,
-    },
-    {
-      name: "Vorwiegend festkochend",
-      description: "Vielseitig einsetzbar. Der Allrounder in der Küche.",
-      image: imgPlaceholderImage6,
-    },
-    {
-      name: "Bio-Kartoffeln",
-      description: "Zertifiziert biologisch angebaut. Ohne Pestizide und Kunstdünger.",
-      image: imgPlaceholderImage3,
-    },
-    {
-      name: "Frühkartoffeln",
-      description: "Die ersten Kartoffeln der Saison. Besonders zart und aromatisch.",
-      image: imgPlaceholderImage4,
-    },
-    {
-      name: "Lagerkartoffeln",
-      description: "Optimal gelagert für ganzjährige Verfügbarkeit. Lange haltbar.",
-      image: imgPlaceholderImage5,
-    },
-  ];
+  const { toggleCart } = useCart();
+  const [selectedProduct, setSelectedProduct] = useState<ProductData | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const openProduct = (product: ProductData) => {
+    setSelectedProduct(product);
+    setIsDialogOpen(true);
+  };
 
   return (
     <>
@@ -74,34 +50,23 @@ export function Products() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {products.map((product, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex flex-col gap-6 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="w-full h-64 overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="px-6 pb-6 flex flex-col gap-3">
-                  <h3 className="font-nunito font-bold text-2xl text-dark-charcoal" style={{ fontVariationSettings: "'YTLC' 500, 'wdth' 100" }}>
-                    {product.name}
-                  </h3>
-                  <p className="font-proza text-dark-charcoal text-base leading-relaxed">
-                    {product.description}
-                  </p>
-                </div>
-              </motion.div>
+              <ProductCard 
+                key={product.id} 
+                product={product} 
+                index={index} 
+                onClick={openProduct} 
+              />
             ))}
           </div>
         </div>
       </section>
+
+      {/* Product Detail Dialog */}
+      <ProductDialog 
+        product={selectedProduct} 
+        isOpen={isDialogOpen} 
+        onOpenChange={setIsDialogOpen} 
+      />
 
       {/* Quality Section */}
       <section className="bg-logo-color w-full px-5 md:px-16 2xl:px-24 py-16 md:py-24 2xl:py-28">
@@ -176,19 +141,17 @@ export function Products() {
             Bereit zum Bestellen?
           </motion.h2>
           <p className="font-proza text-dark-charcoal text-base md:text-lg leading-relaxed mb-8">
-            Besuchen Sie unseren Online-Shop oder kontaktieren Sie uns direkt für Großbestellungen und individuelle Wünsche.
+            Füllen Sie Ihren Warenkorb und schließen Sie die Bestellung in unserem Shop ab.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="https://shop.lauffener-kartoffeln.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-dusty-olive px-6 py-2.5 rounded-md text-white font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_32px_24px_0px_rgba(255,255,255,0.05),inset_0px_2px_1px_0px_rgba(255,255,255,0.25),inset_0px_0px_0px_1px_dark-charcoal/15,inset_0px_-2px_1px_0px_rgba(0,0,0,0.2)] hover:opacity-90 transition-opacity"
-            >
-              Zum Shop
-            </a>
+             <Button 
+                onClick={toggleCart} 
+                className="bg-dusty-olive hover:bg-dusty-olive/90 text-white h-12 px-8 text-lg font-proza"
+             >
+                Warenkorb ansehen
+             </Button>
             <Link to="/kontakt">
-              <button className="bg-dark-charcoal-05 px-6 py-2.5 rounded-md text-dark-charcoal font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_0px_0px_1px_var(--color-dark-charcoal-05),inset_0px_-2px_1px_0px_var(--color-dark-charcoal-05)] hover:bg-dark-charcoal/10 transition-colors">
+              <button className="bg-dark-charcoal-05 px-6 py-2.5 rounded-md text-dark-charcoal font-proza font-medium text-base shadow-[0px_1px_2px_0px_var(--color-dark-charcoal-05),inset_0px_0px_0px_1px_var(--color-dark-charcoal-05),inset_0px_-2px_1px_0px_var(--color-dark-charcoal-05)] hover:bg-dark-charcoal/10 transition-colors h-12 flex items-center justify-center">
                 Kontakt aufnehmen
               </button>
             </Link>
@@ -198,3 +161,4 @@ export function Products() {
     </>
   );
 }
+
